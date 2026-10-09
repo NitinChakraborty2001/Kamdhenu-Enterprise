@@ -1,6 +1,8 @@
-import nutsImage from "@/assets/nuts-collection.jpg";
-import fruitsImage from "@/assets/fruits-makhana.jpg";
-import seedsImage from "@/assets/seeds-collection.jpg";
+const nutsImage = "/Nuts-Collection.jpg";
+const fruitsImage = "/Makhana.jpg";
+const seedsImage = "/Seeds-Collection.jpg";
+
+
 
 export type ProductCategory = "nuts" | "dried-fruits" | "superfoods";
 

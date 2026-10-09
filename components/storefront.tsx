@@ -23,10 +23,10 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-import heroImage from "@/assets/kamdhenu-hero.jpg";
-import nutsImage from "@/assets/nuts-collection.jpg";
-import fruitsImage from "@/assets/fruits-makhana.jpg";
-import seedsImage from "@/assets/seeds-collection.jpg";
+const heroImage = "/Hero.jpg";
+const nutsImage = "/Nuts-Collection.jpg";
+const fruitsImage = "/Makhana.jpg";
+const seedsImage = "/Seeds-Collection.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -1165,7 +1165,7 @@ function CartDrawer({
       </SheetTrigger>
       <SheetContent className="flex w-full flex-col p-0 sm:max-w-xl">
         <SheetHeader className="border-b border-border px-6 py-5 text-left">
-          <SheetTitle className="font-display text-2xl">Your family basket</SheetTitle>
+          <SheetTitle className="font-display text-2xl">Your Family Basket &rarr;</SheetTitle>
           <SheetDescription>Review every item before opening WhatsApp.</SheetDescription>
         </SheetHeader>
         {cart.length === 0 ? (
@@ -1273,7 +1273,7 @@ function CartDrawer({
                   className="mt-1 size-4 accent-primary"
                 />
                 <span>
-                  <span className="block text-sm font-bold">Celebration or bulk quotation</span>
+                  <span className="block text-sm font-bold">Celebration Or Bulk Quotation</span>
                   <span className="mt-1 block text-xs leading-5 text-muted-foreground">
                     Ask the business to confirm any applicable bulk pricing or packaging.
                   </span>
@@ -1281,7 +1281,7 @@ function CartDrawer({
               </label>
               <div className="mt-5">
                 <label htmlFor="customer-note" className="text-sm font-bold">
-                  Optional note
+                  Optional Note
                 </label>
                 <Textarea
                   id="customer-note"
@@ -1293,7 +1293,7 @@ function CartDrawer({
               </div>
               <details className="mt-5 rounded-md border border-border p-4">
                 <summary className="cursor-pointer text-sm font-bold">
-                  View copyable order summary
+                  View Copyable Order Summary
                 </summary>
                 <pre className="mt-3 max-h-52 overflow-auto whitespace-pre-wrap text-xs leading-5 text-muted-foreground">
                   {summary}
@@ -1304,19 +1304,19 @@ function CartDrawer({
               <div className="mb-4 flex items-end justify-between">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                    Estimated grand total
+                    Estimated Grand Total:
                   </p>
                   <p className="mt-1 text-3xl font-extrabold">{formatRupees(subtotal)}</p>
                 </div>
                 <Button variant="ghost" size="sm" onClick={clearCart}>
-                  Clear basket
+                  Clear Basket
                 </Button>
               </div>
               <Button variant="whatsapp" className="h-12 w-full text-base" onClick={order}>
-                Order on WhatsApp <ArrowRight />
+                Order On WhatsApp <ArrowRight />
               </Button>
               <Button variant="outline" className="mt-2 h-11 w-full" onClick={copySummary}>
-                <Clipboard /> Copy order summary
+                <Clipboard /> Copy Order Summary
               </Button>
               <p className="mt-3 text-center text-[11px] leading-5 text-muted-foreground">
                 WhatsApp will open with a prepared message. You must send it to submit your enquiry.
